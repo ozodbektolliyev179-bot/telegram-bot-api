@@ -44,6 +44,9 @@ class Bot:
         }
         requests.get(send_message_url, params=params)
 
+    def send_photo(self, chat_id: str, photo: str) -> None:
+        pass
+
     def start_polling(self) -> None:
         
         while True:
