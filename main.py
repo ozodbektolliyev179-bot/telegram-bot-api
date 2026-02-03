@@ -62,7 +62,14 @@ class Bot:
                             chat_id=message['chat']['id'],
                             text=text
                         )
+                    
+                    photo = message.get('photo')
+                    if photo:
+                        # send photo
+                        pass
 
+                    # ....
+                    
                 self.offset = update['update_id'] + 1
 
 
